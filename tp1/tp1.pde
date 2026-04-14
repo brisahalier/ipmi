@@ -9,27 +9,27 @@ void draw() {
   background(0);
   image(miImagen, 0, 0, 400, 400);
 
-  //BASE CUBO-FRENTE
+  //base cubo-frente
   fill(180);
   noStroke();
   rect(555, 240, 115, 140);
 
-  //CUELLO
+  //cuello
   fill(195);
   noStroke();
   quad(600, 240, 625, 240, 655, 205, 575, 205);
   rect(575, 155, 80, 50);
 
-  //OREJAS
+  //orejas
   fill(200);
   ellipse(560, 115, 15, 35);
   ellipse(670, 115, 15, 35);
-  //DETALLES
+  //detallles
   fill(150);
   ellipse(560, 115, 5, 15);
   ellipse(670, 115, 5, 15);
 
-  //CABEZA PARTE SUPERIOR
+  //cabeza parte superior
   fill(220);
   noStroke();
   beginShape();
@@ -39,7 +39,7 @@ void draw() {
   vertex(665, 115);
   endShape(CLOSE);
 
-  // CABEZA
+  // cabeza
   fill(220);
   noStroke();
   beginShape();
@@ -51,7 +51,7 @@ void draw() {
   endShape(CLOSE);
 
 
-  //VINCHA
+  //cinta frontal
   fill(200);
   noStroke();
   beginShape();
@@ -61,7 +61,7 @@ void draw() {
   bezierVertex(670, 50, 560, 50, 560, 75);
   endShape();
 
-  //LINEA DE SOMBRA DEBAJO
+  //linea de sombra
   stroke(150);
   strokeWeight(3);
   noFill();
@@ -70,11 +70,11 @@ void draw() {
   bezierVertex(560, 50, 670, 50, 670, 75);
   endShape();
 
-  //RULOS
+  //rulos
   fill(220);
   stroke(180);
   strokeWeight(2);
-  //LADO IZQ
+  //lado izq
   ellipse(570, 65, 5, 5);
   ellipse(565, 70, 10, 10);
   ellipse(560, 75, 10, 10);
@@ -82,7 +82,7 @@ void draw() {
   ellipse(555, 85, 15, 15);
   ellipse(555, 90, 10, 10);
   ellipse(555, 100, 10, 10);
-  //LADO DER
+  //lado der
   ellipse(660, 65, 5, 5);
   ellipse(665, 70, 10, 10);
   ellipse(670, 80, 10, 10);
@@ -91,7 +91,7 @@ void draw() {
   ellipse(675, 95, 15, 15);
   ellipse(675, 100, 10, 10);
 
-  //NARIZ
+  //nariz
   stroke(160);
   strokeWeight(2);
   noFill();
@@ -99,45 +99,45 @@ void draw() {
   line(620, 95, 620, 145);
   line(610, 145, 620, 145);
 
-
-  //CEJAS IZQ
+  //cejas
+  //izq
   beginShape();
   vertex(610, 95);
   bezierVertex(590, 80, 575, 80, 565, 90);
   endShape();
 
-  //CEJAS DER
+  //der
   beginShape();
   vertex(620, 95);
   bezierVertex(640, 80, 655, 80, 665, 90);
   endShape();
 
-  //OJOA----PARPADOS
-  stroke(170);
+  //ojos(cuenca
+  stroke(150);
   noFill();
-  //IZQ
+  //izq
   beginShape();
   vertex(570, 95);
   bezierVertex(575, 90, 585, 90, 595, 95);
   endShape();
 
-  //DER
+  //der
   beginShape();
   vertex(630, 95);
   bezierVertex(640, 90, 650, 90, 660, 95);
   endShape();
 
-  //PUPILA
-  stroke(120);
+  //contorno de ojos
+  stroke(110);
   fill(200);
-  //OJO IZQ
+  //izq
   ellipse(585, 105, 25, 10);
 
-  //OJO DER
+  //der
   fill(200);
   ellipse(645, 105, 25, 10);
 
-  //BOCA
+  //boca
   fill(195);
   noStroke();
   arc(615, 165, 35, 15, PI, TWO_PI);
@@ -146,5 +146,3 @@ void draw() {
   strokeWeight(1);
   line(600, 165, 630, 165);
 }
-
-//ellipse(mouseX,mouseY,m );
